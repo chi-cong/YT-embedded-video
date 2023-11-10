@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Embed Video player",
+  "version": "1.0",
+  "permissions": ["tabs", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["contentScript.js"],
+      "css": ["contentStyle.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "assets/images/icon16.png",
+      "32": "assets/images/icon32.png",
+      "48": "assets/images/icon48.png",
+      "128": "assets/images/icon128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "YT embed vid"
+  }
+}
