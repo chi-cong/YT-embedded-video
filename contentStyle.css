@@ -5,3 +5,10 @@
   width: 100%;
   height: 100%;
 }
+#error-screen {
+  position: relative;
+  z-index: -999;
+}
+#player-container-outer {
+  visibility: visible !important;
+}

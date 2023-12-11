@@ -4,6 +4,10 @@ const chromeRuntime = () => {
     const replaceVideo = async () => {
       const muteBtn = document.querySelector('[data-title-no-tooltip="Mute"]');
       const videoContainer = document.getElementsByClassName("ytd-player")[0];
+
+      // if (videoContainer) {
+      // const videoContainer = document.getElementById("player");
+      // }
       const defaultVid = document.getElementsByClassName("html5-video-player")[0];
       const embedSource = `https://www.youtube.com/embed/${videoId}`
       const embedVid = `<iframe class="embed-vid" src=${embedSource} frameborder="0"></iframe>`

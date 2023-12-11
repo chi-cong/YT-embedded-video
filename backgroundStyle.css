@@ -1,0 +1,24 @@
+:root {
+  /* colors */
+  /* --black: ; */
+  /* --white: ; */
+  --primary: rgb(59, 59, 59);
+  /* --warming: ; */
+  --secondary: rgb(109, 109, 109);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  color: rgb(224, 224, 224);
+  background: var(--primary);
+  border: 2px solid var(--secondary);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

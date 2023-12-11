@@ -24,9 +24,10 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo) => {
 });
 
 chrome.tabs.onCreated.addListener(async (tab) => {
-  console.log('create tab');
+  // if (checkbox.checked) {
   const vidId = await getVidId();
   if (vidId) {
     await chrome.tabs.sendMessage(tab.id, { videoId: vidId })
+    // }
   }
 })
